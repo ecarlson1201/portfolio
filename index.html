@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/float-grid.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Italiana" rel="stylesheet">
+    <link rel="icon" href="./assets/site-icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <ul>
+                        <li class="nav-list-item">
+                            <a id="bio-link" class="link" href="#bio">BIO</a>
+                        </li>
+                        <li class="nav-spacing">|</li>
+                        <li class="nav-list-item">
+                            <a id="projects-link" class="link" href="#projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-spacing">|</li>
+                        <li class="nav-list-item">
+                            <a id="skills-link" class="link" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav-spacing">|</li>
+                        <li class="nav-list-item">
+                            <a href="EricCarlsonResume.pdf" class="link" target="_blank">RESUME</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="hero">
+            <div class="row">
+                <div id="header-container" class="container">
+                    <h1 id="header">ERIC CARLSON</h1>
+                    <h2 id="subheader">Full Stack Web Developer</h2>
+                </div>
+            </div>
+        </div>
+
+        <a id="bio">
+            <div id="bio-container" class="row container">
+                <div class="col-4">
+                    <img src="./assets/profile-pic.jpg" id="hero-shot" alt="hero-shot">
+                </div>
+                <div id="bio" class="col-8 borders">
+                    <h1 id="bio-header">Hello, my name is Eric!</h1>
+                    <p class="description">I am a full stack javascript developer with experience using
+                        React/Node/Express/Mongo to build
+                        web
+                        apps, eager to quickly learn new technical skills and adapt to new work environments. I am an
+                        active, engaging team member and a driven, dedicated employee. I am searching for the right
+                        company
+                        where I can pursue my creative and artistic passions I developed in film school while also
+                        utilizing
+                        my leadership and problemsolving skills I developed as a server captain. Working with an engaged
+                        and
+                        driven team to create an intuitive, easily accessible user experience is extremely rewarding for
+                        me.
+                        I relish in the problem solving and optimization aspects of web development. When I am not
+                        coding, I
+                        enjoy going to the movies, growing my youtube channel, and attending the occasional Dodger game.
+                    </p>
+                    <p class="description contact">Contact by email: <br> <span
+                            id="email">eric.paul.carlson@gmail.com</span>
+                    </p>
+                    <p class="description contact">Or on social media:</p>
+                    <a class="link" href="https://www.linkedin.com/in/eric-carlson-58924a35/"
+                        target="_blank">LINKEDIN</a>
+                    <span class="nav-spacing">|</span>
+                    <a class="link" href="https://github.com/ecarlson1201" target="_blank">GITHUB</a>
+                </div>
+            </div>
+        </a>
+        <a id="projects">
+            <div id="top" class="row container">
+                <h1>PROJECTS</h1>
+                <div class="col-6 borders app-description">
+                    <h2 class="app-description"> Gift List</h2>
+                    <p class="description">
+                        Gift List is an online gift idea database that allows you to brainstorm
+                        gifts for people in your life by searching for gift ideas submitted by other users and saving
+                        them
+                        to your lists.
+                    </p>
+                    <p class="description">React/Redux, CSS, HTML, Javascript, Node, Express, Heroku (TravisCI for CI)
+                    </p>
+                    <a class="link" href="https://github.com/ecarlson1201/gift-list-client" target="_blank">VIEW FRONT
+                        END</a>
+                    <span class="nav-spacing">|</span>
+                    <a class="link" href="https://github.com/ecarlson1201/gift-list-api" target="_blank">VIEW BACK
+                        END</a>
+                    <span class="nav-spacing">|</span>
+                    <a class="link" href="https://afternoon-gorge-27039.herokuapp.com/" target="_blank">LIVE DEMO</a>
+                </div>
+                <div class="col-6">
+                    <img class="app-screenshot" src="./assets/PicApp - Apple Macbook Pro.png"
+                        alt="gift-list-screenshot">
+                </div>
+            </div>
+            <div id="middle" class="row container">
+                <div class="col-4">
+                    <img class="app-screenshot" src="./assets/PicApp - Apple iPhone X.png" alt="time-flies-screenshot">
+                </div>
+                <div class="col-8 borders app-description">
+                    <h2 class="app-description">Time Flies</h2>
+                    <p class="description">
+                        Time Flies is a scheduling app that determines the amount of unproductive time the user has
+                        during
+                        their day. A user can login and add their weekly schedule to the app. The app will then
+                        calculate
+                        how much time each day is being underutilized. The user can also modify their schedule by adding
+                        new
+                        entries or updating/deleting existing entries.
+                    </p>
+                    <p class="description">HTML5, CSS3, JavaScript, jQuery, Node.js, MongoDB</p>
+                    <a class="link" href="https://github.com/ecarlson1201/node-capstone" target="_blank">VIEW REPO</a>
+                    <span class="nav-spacing">|</span>
+                    <a class="link" href="https://blooming-thicket-82663.herokuapp.com/" target="_blank">LIVE DEMO</a>
+                </div>
+            </div>
+            <div id="bottom" class="row container">
+                <div class="col-8 borders app-description">
+                    <h2 class="app-description">Coding Reloaded</h2>
+                    <p class="description">
+                        Coding Reloaded is a basic term search helper for beginning coders. It allows the user to
+                        search
+                        for
+                        a coding term and returns consise information, forum posts, and videos about the term.
+                    </p>
+                    <p class="description">HTML5, CSS3, JavaScript, jQuery, Youtube API, Reddit API, Stack Overflow API, Mozilla API</p>
+                    <a class="link" href="https://github.com/ecarlson1201/CodingReloaded" target="_blank">VIEW
+                        REPO</a>
+                    <span class="nav-spacing">|</span>
+                    <a class="link" href="https://ecarlson1201.github.io/CodingReloaded/" target="_blank">LIVE
+                        DEMO</a>
+                </div>
+                <div class="col-4">
+                    <img class="app-screenshot" src="./assets/PicApp - iPad Air 2 Black.png"
+                        alt="coding-reloaded-screenshot">
+                </div>
+            </div>
+        </a>
+        <a id="skills">
+            <div class="row container">
+                    <h1>SKILLS</h1>
+                <div class="col-4">
+                    <h2>Front End</h2>
+                    <ul>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/html-logo.png"
+                                alt="html-logo"><br> HTML5
+                        </li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/css-logo.png" alt="css-logo"><br>
+                            CSS3</li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/javascript-logo.png"
+                                alt="js-logo"><br>JavaScript
+                        </li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/react-logo.png"
+                                alt="react-logo"><br>React.js</li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/redux-logo.png"
+                                alt="redux-logo"><br>Redux
+                        </li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/jquery-logo.png"
+                                alt="jquery-logo"><br>jQuery</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h2>Back End</h2>
+                    <ul>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/node-logo.png"
+                                alt="node-logo"><br>Node.js
+                        </li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/express-logo.png"
+                                alt="express-logo"><br>Express
+                        </li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/mongo.png"
+                                alt="mongo-logo"><br>MongoDB
+                        </li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/mongoose-logo.png"
+                                alt="mongoose-logo"><br>Mongoose
+                        </li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/mocha-chai-logo.png"
+                                alt="mocha-chai-logo"><br>Chai/Mocha</li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/passport-logo.png"
+                                alt="passport-logo"><br>Passport
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h2>Tools</h2>
+                    <ul>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/git-logo.png"
+                                alt="git-logo"><br>Git</li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/github-logo.png"
+                                alt="github-logo"><br>GitHub</li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/mlab-logo.png"
+                                alt="mlab-logo"><br>mLab
+                        </li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/heroku-logo.png"
+                                alt="heroku-logo"><br>Heroku</li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/dev-tools-logo.png"
+                                alt="dev-tools-logo"><br>Dev
+                            Tools</li>
+                        <li class="logo"><img class="skills-logo" src="./assets/logos/travis-logo.png"
+                                alt="travis-ci-logo"><br>Travis CI
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </main>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+</body>
+
+</html>
