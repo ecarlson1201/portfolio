@@ -231,5 +231,9 @@ h1{
     .contact{
         text-align: center;
     }
-    
+
+    body{
+        background-image: none;
+        background-color: rgb(202, 223, 226);
+    }
 }
