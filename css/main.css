@@ -183,6 +183,16 @@ h1{
 }
 
 @media only screen and (min-width: 641px) {
+    
+    .border-link{
+        border: 1px solid rgb(184, 212, 218);
+        border-radius: 4px;
+        padding: 3px;   
+    }
+
+    .border-link:hover{
+        border: 1px solid rgb(82, 125, 134);
+    }
     body{
         background-image: url('../assets/architectural-design-architecture-buildings-1049302.jpg');
         background-attachment: fixed;
