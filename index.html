@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <div class="row">
             <div class="col-12">
-                <nav>
+                <nav role="navigation">
                     <ul>
                         <li class="nav-list-item">
                             <a id="bio-link" class="link" href="#bio">BIO</a>
@@ -39,23 +39,19 @@
         </div>
     </header>
 
-    <main>
-        <div id="hero">
-            <div class="row">
-                <div id="header-container" class="container">
-                    <h1 id="header">ERIC CARLSON</h1>
-                    <h2 id="subheader">Full Stack Web Developer</h2>
-                </div>
-            </div>
+    <main role="main">
+        <div id="hero"></div>
+        <div class="row">
+        </div>
         </div>
 
         <a id="bio">
-            <div id="bio-container" class="row container">
+            <div id="bio-container" class="row container" role="article">
                 <div class="col-4">
                     <img src="./assets/profile-pic.jpg" id="hero-shot" alt="hero-shot">
                 </div>
                 <div id="bio" class="col-8 borders">
-                    <h1 id="bio-header">Hello, my name is Eric!</h1>
+                    <h1 id="bio-header">Hello, my name is Eric Carlson!</h1>
                     <p class="description">I am a full stack javascript developer with experience using
                         React/Node/Express/Mongo to build
                         web
@@ -84,7 +80,7 @@
             </div>
         </a>
         <a id="projects">
-            <div id="top" class="row container">
+            <div id="top" class="row container" role="article">
                 <h1>PROJECTS</h1>
                 <div class="col-6 borders app-description">
                     <h2 class="app-description"> Gift List</h2>
@@ -96,13 +92,16 @@
                     </p>
                     <p class="description">React/Redux, CSS, HTML, Javascript, Node, Express, Heroku (TravisCI for CI)
                     </p>
-                    <a class="link border-link" href="https://github.com/ecarlson1201/gift-list-client" target="_blank">VIEW FRONT
+                    <a class="link border-link" href="https://github.com/ecarlson1201/gift-list-client"
+                        target="_blank">VIEW FRONT
                         END</a>
                     <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://github.com/ecarlson1201/gift-list-api" target="_blank">VIEW BACK
+                    <a class="link border-link" href="https://github.com/ecarlson1201/gift-list-api"
+                        target="_blank">VIEW BACK
                         END</a>
                     <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://afternoon-gorge-27039.herokuapp.com/" target="_blank">LIVE DEMO</a>
+                    <a class="link border-link" href="https://afternoon-gorge-27039.herokuapp.com/" target="_blank">LIVE
+                        DEMO</a>
                 </div>
                 <div class="col-6">
                     <img class="app-screenshot" src="./assets/PicApp - Apple Macbook Pro.png"
@@ -125,9 +124,11 @@
                         entries or updating/deleting existing entries.
                     </p>
                     <p class="description">HTML5, CSS3, JavaScript, jQuery, Node.js, MongoDB</p>
-                    <a class="link border-link" href="https://github.com/ecarlson1201/node-capstone" target="_blank">VIEW REPO</a>
+                    <a class="link border-link" href="https://github.com/ecarlson1201/node-capstone"
+                        target="_blank">VIEW REPO</a>
                     <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://blooming-thicket-82663.herokuapp.com/" target="_blank">LIVE DEMO</a>
+                    <a class="link border-link" href="https://blooming-thicket-82663.herokuapp.com/"
+                        target="_blank">LIVE DEMO</a>
                 </div>
             </div>
             <div id="bottom" class="row container">
@@ -139,11 +140,14 @@
                         for
                         a coding term and returns consise information, forum posts, and videos about the term.
                     </p>
-                    <p class="description">HTML5, CSS3, JavaScript, jQuery, Youtube API, Reddit API, Stack Overflow API, Mozilla API</p>
-                    <a class="link border-link" href="https://github.com/ecarlson1201/CodingReloaded" target="_blank">VIEW
+                    <p class="description">HTML5, CSS3, JavaScript, jQuery, Youtube API, Reddit API, Stack Overflow API,
+                        Mozilla API</p>
+                    <a class="link border-link" href="https://github.com/ecarlson1201/CodingReloaded"
+                        target="_blank">VIEW
                         REPO</a>
                     <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://ecarlson1201.github.io/CodingReloaded/" target="_blank">LIVE
+                    <a class="link border-link" href="https://ecarlson1201.github.io/CodingReloaded/"
+                        target="_blank">LIVE
                         DEMO</a>
                 </div>
                 <div class="col-4">
@@ -153,8 +157,8 @@
             </div>
         </a>
         <a id="skills">
-            <div class="row container">
-                    <h1>SKILLS</h1>
+            <div class="row container" role="article">
+                <h1>SKILLS</h1>
                 <div class="col-4">
                     <h2>Front End</h2>
                     <ul>
@@ -219,6 +223,16 @@
                 </div>
             </div>
         </a>
+        <footer class="row container" id="footer-container">
+            <div class="col-12">
+                <p id="footer">
+                    <div id="left" class="col-4"> <span class="footer-span">Contact: </span>eric.paul.carlson@gmail.com</div>
+                    <div id="center" class="col-4"><span class="footer-span">Site By: </span>Eric Carlson</div>
+                    <div id="right" class="col-4"><span class="footer-span">Copyright</span> <img id="copyright-symbol" src="./assets//copyright-symbol.png"
+                            alt="copyright-symbol"> 2019</div>
+                </p>
+            </div>
+        </footer>
     </main>
     <script src="https://code.jquery.com/jquery.min.js"></script>
 </body>

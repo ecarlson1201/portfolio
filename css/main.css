@@ -182,6 +182,49 @@ h1{
     margin-bottom: 0;
 }
 
+#footer{
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+
+#copyright-symbol{
+    max-width: 10px;
+}
+
+#left{
+    display: inline-block;
+    font-family: 'Didact Gothic';
+    font-weight: bold;
+    line-height: 2;
+    color: rgb(94, 94, 94);
+}
+
+#right{
+    display: inline-block;
+    font-family: 'Didact Gothic';
+    font-weight: bold;
+    line-height: 2;
+    color: rgb(94, 94, 94);
+}
+
+#center{
+    display: inline-block;
+    font-family: 'Didact Gothic';
+    font-weight: bold;
+    line-height: 2;
+    color: rgb(94, 94, 94);
+}
+
+#footer-container{
+    padding: 0;
+}
+
+.footer-span{
+    color: rgb(82, 125, 134);
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 641px) {
     
     .border-link{
