@@ -2,249 +2,515 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140800057-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-140800057-1');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eric Carlson - Portfolio</title>
-    <link rel="stylesheet" href="./css/float-grid.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Italiana" rel="stylesheet">
-    <link rel="icon" href="./assets/site-icon.png">
+    <title>Eric Carlson Web Developer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:100,200,300,400,700,900|Montserrat:100,200,300,400,500"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header role="banner">
-        <div class="row">
-            <div class="col-12">
-                <nav role="navigation">
-                    <ul>
-                        <li class="nav-list-item">
-                            <a id="bio-link" class="link" href="#bio">BIO</a>
-                        </li>
-                        <li class="nav-spacing">|</li>
-                        <li class="nav-list-item">
-                            <a id="projects-link" class="link" href="#projects">PROJECTS</a>
-                        </li>
-                        <li class="nav-spacing">|</li>
-                        <li class="nav-list-item">
-                            <a id="skills-link" class="link" href="#skills">SKILLS</a>
-                        </li>
-                        <li class="nav-spacing">|</li>
-                        <li class="nav-list-item">
-                            <a href="EricCarlsonResume.pdf" class="link" target="_blank">RESUME</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <div class="hero-container lazyload" data-sizes="auto" style="
+         background-image: url('./assets/hero-small.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+         " data-bg="./assets/hero.jpg" data-srcset="./assets/hero.jpg 300w,
+         ./assets/hero.jpg 600w,
+         ./assets/hero.jpg 900w">
+        <div class="hero-gradient"></div>
+        <div class="hero-inner">
+            <h1>HELLO! I'M ERIC CARLSON</h1>
+            <h2>I'm a full stack web developer working in Los Angeles.</h2>
+            <ul>
+                <li data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" data-aos-delay="50"><a
+                        class="middle scrollLink" href="#about">ABOUT ME</a></li>
+                <li data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" data-aos-delay="150"><a
+                        class="middle scrollLink" href="#projects">PROJECTS</a></li>
+                <li data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" data-aos-delay="250"><a
+                        class="middle scrollLink" href="#skills">SKILLS</a></li>
+                <li data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" data-aos-delay="250"><a
+                        class="middle scrollLink" href="mailto: eric.paul.carlson@gmail.com">EMAIL</a></li>
+                <li data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600" data-aos-delay="350"><a
+                        class="middle scrollLink" href="EricCarlsonResume.pdf" target="_blank">RESUME</a></li>
         </div>
-    </header>
-
-    <main role="main">
-        <div id="hero"></div>
-        <div class="row">
-        </div>
-        </div>
-
-        <a id="bio">
-            <div id="bio-container" class="row container" role="article">
-                <div class="col-4">
-                    <img src="./assets/profile-pic.jpg" id="hero-shot" alt="hero-shot">
-                </div>
-                <div id="bio" class="col-8 borders">
-                    <h1 id="bio-header">Hello, my name is Eric Carlson!</h1>
-                    <p class="description">I am a full stack javascript developer with experience using
-                        React/Node/Express/Mongo to build
-                        web
-                        apps, eager to quickly learn new technical skills and adapt to new work environments. I am an
-                        active, engaging team member and a driven, dedicated employee. I am searching for the right
-                        company
-                        where I can pursue my creative and artistic passions I developed in film school while also
-                        utilizing
-                        my leadership and problem-solving skills I developed as a server captain. Working with an engaged
-                        and
-                        driven team to create an intuitive, easily accessible user experience is extremely rewarding for
-                        me.
-                        I relish in the problem solving and optimization aspects of web development. When I am not
-                        coding, I
-                        enjoy going to the movies, growing my youtube channel, and attending the occasional Dodger game.
-                    </p>
-                    <p class="description contact">Contact by email: <br> <span
-                            id="email">eric.paul.carlson@gmail.com</span>
-                    </p>
-                    <p class="description contact">Or on social media:</p>
-                    <a class="link border-link" href="https://www.linkedin.com/in/eric-carlson-58924a35/"
-                        target="_blank">LINKEDIN</a>
-                    <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://github.com/ecarlson1201" target="_blank">GITHUB</a>
+        </ul>
+    </div>
+    <div class="about-container">
+        <a id='about' class="anchor"></a>
+        <div class="about-inner">
+            <div class="top-left lazyload" data-sizes="auto" style="
+                background-image: url('./assets/chalk-background-small.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                " data-bg="./assets/chalk-background.jpg" data-srcset="./assets/chalk-background.jpg 300w,
+                ./assets/chalk-background.jpg 600w,
+                ./assets/chalk-background.jpg 900w">
+                <div class="top-left-inner">
+                    <div class="about-me-line"><span>ABOUT ME</span></div>
+                    <p>I am a full stack developer with experience using React/Node/Express/Mongo as well as Shopify
+                        to build web apps, eager to quickly learn new technical skills and adapt to new work
+                        environments.
+                        I am an active, engaging team member and a driven, dedicated employee. I am searching for the
+                        right
+                        company where I can pursue my creative and artistic passions I developed in film school while
+                        also utilizing
+                        my leadership and problem-solving skills I developed as a server captain. Working with an
+                        engaged and driven
+                        team to create an intuitive, easily accessible user experience is extremely rewarding for me. I
+                        relish in the
+                        problem solving and optimization aspects of web development.</p>
                 </div>
             </div>
-        </a>
-        <a id="projects">
-            <div id="top" class="row container" role="article">
-                <h1>PROJECTS</h1>
-                <div class="col-6 borders app-description">
-                    <h2 class="app-description"> Gift List</h2>
-                    <p class="description">
-                        Gift List is an online gift idea database that allows you to brainstorm
-                        gifts for people in your life by searching for gift ideas submitted by other users and saving
-                        them
-                        to your lists.
-                    </p>
-                    <p class="description">React/Redux, CSS, HTML, Javascript, Node, Express, Heroku (TravisCI for CI)
-                    </p>
-                    <a class="link border-link" href="https://github.com/ecarlson1201/gift-list-client"
-                        target="_blank">VIEW FRONT
-                        END</a>
-                    <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://github.com/ecarlson1201/gift-list-api"
-                        target="_blank">VIEW BACK
-                        END</a>
-                    <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://afternoon-gorge-27039.herokuapp.com/" target="_blank">LIVE
-                        DEMO</a>
-                </div>
-                <div class="col-6">
-                    <img class="app-screenshot" src="./assets/PicApp - Apple Macbook Pro.png"
-                        alt="gift-list-screenshot">
-                </div>
-            </div>
-            <div id="middle" class="row container">
-                <div class="col-4">
-                    <img class="app-screenshot" src="./assets/PicApp - Apple iPhone X.png" alt="time-flies-screenshot">
-                </div>
-                <div class="col-8 borders app-description">
-                    <h2 class="app-description">Time Flies</h2>
-                    <p class="description">
-                        Time Flies is a scheduling app that determines the amount of unproductive time the user has
-                        during
-                        their day. A user can login and add their weekly schedule to the app. The app will then
-                        calculate
-                        how much time each day is being underutilized. The user can also modify their schedule by adding
-                        new
-                        entries or updating/deleting existing entries.
-                    </p>
-                    <p class="description">HTML5, CSS3, JavaScript, jQuery, Node.js, MongoDB</p>
-                    <a class="link border-link" href="https://github.com/ecarlson1201/node-capstone"
-                        target="_blank">VIEW REPO</a>
-                    <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://blooming-thicket-82663.herokuapp.com/"
-                        target="_blank">LIVE DEMO</a>
-                </div>
-            </div>
-            <div id="bottom" class="row container">
-                <div class="col-8 borders app-description">
-                    <h2 class="app-description">Coding Reloaded</h2>
-                    <p class="description">
-                        Coding Reloaded is a basic term search helper for beginning coders. It allows the user to
-                        search
-                        for
-                        a coding term and returns consise information, forum posts, and videos about the term.
-                    </p>
-                    <p class="description">HTML5, CSS3, JavaScript, jQuery, Youtube API, Reddit API, Stack Overflow API,
-                        Mozilla API</p>
-                    <a class="link border-link" href="https://github.com/ecarlson1201/CodingReloaded"
-                        target="_blank">VIEW
-                        REPO</a>
-                    <span class="nav-spacing">|</span>
-                    <a class="link border-link" href="https://ecarlson1201.github.io/CodingReloaded/"
-                        target="_blank">LIVE
-                        DEMO</a>
-                </div>
-                <div class="col-4">
-                    <img class="app-screenshot" src="./assets/PicApp - iPad Air 2 Black.png"
-                        alt="coding-reloaded-screenshot">
-                </div>
-            </div>
-        </a>
-        <a id="skills">
-            <div class="row container" role="article">
-                <h1>SKILLS</h1>
-                <div class="col-4">
-                    <h2>Front End</h2>
-                    <ul>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/html-logo.png"
-                                alt="html-logo"><br> HTML5
-                        </li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/css-logo.png" alt="css-logo"><br>
-                            CSS3</li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/javascript-logo.png"
-                                alt="js-logo"><br>JavaScript
-                        </li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/react-logo.png"
-                                alt="react-logo"><br>React.js</li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/redux-logo.png"
-                                alt="redux-logo"><br>Redux
-                        </li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/jquery-logo.png"
-                                alt="jquery-logo"><br>jQuery</li>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <h2>Back End</h2>
-                    <ul>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/node-logo.png"
-                                alt="node-logo"><br>Node.js
-                        </li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/express-logo.png"
-                                alt="express-logo"><br>Express
-                        </li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/mongo.png"
-                                alt="mongo-logo"><br>MongoDB
-                        </li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/mongoose-logo.png"
-                                alt="mongoose-logo"><br>Mongoose
-                        </li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/mocha-chai-logo.png"
-                                alt="mocha-chai-logo"><br>Chai/Mocha</li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/passport-logo.png"
-                                alt="passport-logo"><br>Passport
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <h2>Tools</h2>
-                    <ul>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/git-logo.png"
-                                alt="git-logo"><br>Git</li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/github-logo.png"
-                                alt="github-logo"><br>GitHub</li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/mlab-logo.png"
-                                alt="mlab-logo"><br>mLab
-                        </li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/heroku-logo.png"
-                                alt="heroku-logo"><br>Heroku</li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/dev-tools-logo.png"
-                                alt="dev-tools-logo"><br>Dev
-                            Tools</li>
-                        <li class="logo"><img class="skills-logo" src="./assets/logos/travis-logo.png"
-                                alt="travis-ci-logo"><br>Travis CI
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </a>
-        <footer class="row container" id="footer-container">
-            <div class="col-12">
-                <p id="footer">
-                    <div id="left" class="col-4"> <span class="footer-span">Contact: </span>eric.paul.carlson@gmail.com
+            <div class="top-right lazyload icon-container" data-sizes="auto" style="
+                background-image: url('./assets/about-1-small.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                " data-bg="./assets/skills-1.jpg">
+                <a href="mailto: eric.paul.carlson@gmail.com">
+                    <div><img src="./assets/icon-email.png" alt="">
+                        <div class="icon-overlay"><span>ERIC.PAUL.CARLSON@GMAIL.COM</span></div>
                     </div>
-                    <div id="center" class="col-4"><span class="footer-span">Site By: </span>Eric Carlson</div>
-                    <div id="right" class="col-4"><span class="footer-span">Copyright</span> <img id="copyright-symbol"
-                            src="./assets//copyright-symbol.png" alt="copyright-symbol"> 2019</div>
-                </p>
+                </a>
             </div>
-        </footer>
-    </main>
-    <script src="https://code.jquery.com/jquery.min.js"></script>
+            <div class="bottom-left lazyload icon-container" data-sizes="auto" style="
+                background-image: url('./assets/about-2-small.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                " data-bg="./assets/skills-2.jpg">
+                <a href="https://github.com/ecarlson1201" target="_blank">
+                    <div><img src="./assets/icon-github.png" alt="">
+                        <div class="icon-overlay"><span>GITHUB</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="bottom-middle lazyload icon-container" data-sizes="auto" style="
+                background-image: url('./assets/about-2-small.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                " data-bg="./assets/about-2.jpg">
+                <a href="https://www.linkedin.com/in/ecarlson1201/" target="_blank">
+                    <div><img src="./assets/icon-linkedin.png" alt="">
+                        <div class="icon-overlay"><span>LINKEDIN</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="bottom-right lazyload" data-sizes="auto" style="
+                background-image: url('./assets/chalk-background-small.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                " data-bg="./assets/chalk-background.jpg" data-srcset="./assets/chalk-background.jpg 300w,
+                ./assets/chalk-background.jpg 600w,
+                ./assets/chalk-background.jpg 900w">
+                <div class="bottom-right-inner">
+                    <div class="about-me-line"><span>CONTINUED</span></div>
+                    <p>When I am not coding, I enjoy going to the movies,
+                        growing my youtube channel, and attending the occasional Dodger game.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-container">
+        <a id='projects' class="anchor"></a>
+        <div class="projects-inner">
+            <ul>
+                <li class="projects-block lazyload" data-sizes="auto" style="
+                    background-image: url('./assets/screenshots/vc_background.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    " data-bg="./assets/screenshots/vc_background.png" data-srcset="./assets/screenshots/vc_background.png 300w,
+                    ./assets/screenshots/vc_background.png 600w,
+                    ./assets/screenshots/vc_background.png 900w">
+                    <div class="hero-gradient"></div>
+                    <div class="projects-header vc">
+                        <h2>VEGGIECRAFT FARMS</h2>
+                    </div>
+                    <div class="projects-link-container">
+                        <div class="scrollLink-container"><a class="middle vc-link"
+                                href="https://veggiecraftfarms.com/">VIEW SITE</a></div>
+                    </div>
+                    <div class="projects-info-container lazyload">
+                        <p class="projects-info-inner">
+                            I am a full stack developer with experience using React/Node/Express/Mongo as well as
+                            Shopify
+                            to build web apps, eager to quickly learn new technical skills and adapt to new work
+                            environments.
+                            I am an active, engaging team member and a driven, dedicated employee. I am searching
+                            for the
+                            right
+                            company where I can pursue my creative and artistic passions I developed in film school
+                            while
+                            also utilizing
+                            my leadership and problem-solving skills I developed as a server captain. Working with
+                            an
+                            engaged and driven
+                            team to create an intuitive, easily accessible user experience is extremely rewarding
+                            for me. I
+                            relish in the
+                            problem solving and optimization aspects of web development.
+                        </p>
+                    </div>
+                    <div class="projects-image-container" data-aos="fade-left" data-aos-duration="2000"
+                        data-aos-anchor-placement='center-bottom'>
+                        <img class="lazyload" data-sizes="auto" data-srcset="./assets/screenshots/vc_final-2.png 300w,
+                        ./assets/screenshots/vc_final-2.png 600w,
+                        ./assets/screenshots/vc_final-2.png 900w" alt="">
+                    </div>
+                </li>
+                <li class="projects-block lazyload" data-sizes="auto" style="
+                    background-image: url('./assets/screenshots/qv_background.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    " data-bg="./assets/screenshots/qv_background.png" data-srcset="./assets/screenshots/qv_background.png 300w,
+                    ./assets/screenshots/qv_background.png 600w,
+                    ./assets/screenshots/qv_background.png 900w">
+                    <div class="hero-gradient"></div>
+                    <div class="projects-header qv">
+                        <h2>QUEEN V</h2>
+                    </div>
+                    <div class="projects-link-container">
+                        <div class="scrollLink-container"><a class="middle qv-link" href="https://queenvlife.com/">VIEW
+                                SITE</a></div>
+                    </div>
+                    <div class="projects-image-container" data-aos="fade-right" data-aos-duration="2000"
+                        data-aos-anchor-placement='center-bottom'>
+                        <img class="lazyload" data-sizes="auto" data-srcset="./assets/screenshots/qv_final-2.png 300w,
+                    ./assets/screenshots/qv_final-2.png 600w,
+                    ./assets/screenshots/qv_final-2.png 900w" alt="">
+                    </div>
+                    <div class="projects-info-container lazyload">
+                        <p class="projects-info-inner">
+                            I am a full stack developer with experience using React/Node/Express/Mongo as well as
+                            Shopify
+                            to build web apps, eager to quickly learn new technical skills and adapt to new work
+                            environments.
+                            I am an active, engaging team member and a driven, dedicated employee. I am searching
+                            for the
+                            right
+                            company where I can pursue my creative and artistic passions I developed in film school
+                            while
+                            also utilizing
+                            my leadership and problem-solving skills I developed as a server captain. Working with
+                            an
+                            engaged and driven
+                            team to create an intuitive, easily accessible user experience is extremely rewarding
+                            for me. I
+                            relish in the
+                            problem solving and optimization aspects of web development.
+                        </p>
+                    </div>
+                </li>
+                <li class="projects-block lazyload" data-sizes="auto" style="
+                    background-image: url('./assets/screenshots/thrive_background.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    " data-bg="./assets/screenshots/thrive_background.png" data-srcset="./assets/screenshots/thrive_background.png 300w,
+                    ./assets/screenshots/thrive_background.png 600w,
+                    ./assets/screenshots/thrive_background.png 900w">
+                    <div class="hero-gradient"></div>
+                    <div class="projects-header thrive">
+                        <h2>READY TO THRIVE</h2>
+                    </div>
+                    <div class="projects-link-container">
+                        <div class="scrollLink-container"><a class="middle thrive-link"
+                                href="https://readytothrive.com/">VIEW SITE</a></div>
+                    </div>
+                    <div class="projects-info-container lazyload">
+                        <p class="projects-info-inner">
+                            I am a full stack developer with experience using React/Node/Express/Mongo as well as
+                            Shopify
+                            to build web apps, eager to quickly learn new technical skills and adapt to new work
+                            environments.
+                            I am an active, engaging team member and a driven, dedicated employee. I am searching
+                            for the
+                            right
+                            company where I can pursue my creative and artistic passions I developed in film school
+                            while
+                            also utilizing
+                            my leadership and problem-solving skills I developed as a server captain. Working with
+                            an
+                            engaged and driven
+                            team to create an intuitive, easily accessible user experience is extremely rewarding
+                            for me. I
+                            relish in the
+                            problem solving and optimization aspects of web development.
+                        </p>
+                    </div>
+                    <div class="projects-image-container" data-aos="fade-left" data-aos-duration="2000"
+                        data-aos-anchor-placement='center-bottom'>
+                        <img class="lazyload" data-sizes="auto" data-srcset="./assets/screenshots/thrive_final-2.png 300w,
+                        ./assets/screenshots/thrive_final-2.png 600w,
+                        ./assets/screenshots/thrive_final-2.png 900w" alt="">
+                    </div>
+                </li>
+                <li class="projects-block lazyload" data-sizes="auto" style="
+                    background-image: url('./assets/screenshots/gl_background.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    " data-bg="./assets/screenshots/gl_background.png" data-srcset="./assets/screenshots/gl_background.png 300w,
+                    ./assets/screenshots/gl_background.png 600w,
+                    ./assets/screenshots/gl_background.png 900w">
+                    <div class="hero-gradient"></div>
+                    <div class="projects-header gl">
+                        <h2>GIFT LIST</h2>
+                    </div>
+                    <div class="projects-link-container">
+                        <div class="scrollLink-container"><a class="middle gl-link"
+                                href="https://afternoon-gorge-27039.herokuapp.com/">VIEW SITE</a></div>
+                        <div class="scrollLink-container"><a class="middle gl-link"
+                                href="https://github.com/ecarlson1201/gift-list-client">FRONT END</a></div>
+                        <div class="scrollLink-container"><a class="middle gl-link"
+                                href="https://github.com/ecarlson1201/gift-list-api">BACK END</a></div>
+                    </div>
+                    <div class="projects-image-container" data-aos="fade-right" data-aos-duration="2000"
+                        data-aos-anchor-placement='center-bottom'>
+                        <img class="lazyload" data-sizes="auto" data-srcset="./assets/screenshots/gl_final-2.png 300w,
+                    ./assets/screenshots/gl_final-2.png 600w,
+                    ./assets/screenshots/gl_final-2.png 900w" alt="">
+                    </div>
+                    <div class="projects-info-container lazyload">
+                        <p class="projects-info-inner">
+                            I am a full stack developer with experience using React/Node/Express/Mongo as well as
+                            Shopify
+                            to build web apps, eager to quickly learn new technical skills and adapt to new work
+                            environments.
+                            I am an active, engaging team member and a driven, dedicated employee. I am searching
+                            for the
+                            right
+                            company where I can pursue my creative and artistic passions I developed in film school
+                            while
+                            also utilizing
+                            my leadership and problem-solving skills I developed as a server captain. Working with
+                            an
+                            engaged and driven
+                            team to create an intuitive, easily accessible user experience is extremely rewarding
+                            for me. I
+                            relish in the
+                            problem solving and optimization aspects of web development.
+                        </p>
+                    </div>
+                </li>
+                <li class="projects-block lazyload" data-sizes="auto" style="
+                    background-image: url('./assets/screenshots/tf_background.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    " data-bg="./assets/screenshots/tf_background.png" data-srcset="./assets/screenshots/tf_background.png 300w,
+                    ./assets/screenshots/tf_background.png 600w,
+                    ./assets/screenshots/tf_background.png 900w">
+                    <div class="hero-gradient"></div>
+                    <div class="projects-header tf">
+                        <h2>TIME FLIES</h2>
+                    </div>
+                    <div class="projects-link-container">
+                        <div class="scrollLink-container"><a class="middle tf-link"
+                                href="https://blooming-thicket-82663.herokuapp.com/">VIEW SITE</a></div>
+                        <div class="scrollLink-container"><a class="middle tf-link"
+                                href="https://github.com/ecarlson1201/node-capstone">REPO</a></div>
+                    </div>
+                    <div class="projects-info-container lazyload">
+                        <p class="projects-info-inner">
+                            I am a full stack developer with experience using React/Node/Express/Mongo as well as
+                            Shopify
+                            to build web apps, eager to quickly learn new technical skills and adapt to new work
+                            environments.
+                            I am an active, engaging team member and a driven, dedicated employee. I am searching
+                            for the
+                            right
+                            company where I can pursue my creative and artistic passions I developed in film school
+                            while
+                            also utilizing
+                            my leadership and problem-solving skills I developed as a server captain. Working with
+                            an
+                            engaged and driven
+                            team to create an intuitive, easily accessible user experience is extremely rewarding
+                            for me. I
+                            relish in the
+                            problem solving and optimization aspects of web development.
+                        </p>
+                    </div>
+                    <div class="projects-image-container" data-aos="fade-left" data-aos-duration="2000"
+                        data-aos-anchor-placement='center-bottom'>
+                        <img class="lazyload" data-sizes="auto" data-srcset="./assets/screenshots/tf_final-2.png 300w,
+                        ./assets/screenshots/tf_final-2.png 600w,
+                        ./assets/screenshots/tf_final-2.png 900w" alt="">
+                    </div>
+                </li>
+                <li class="projects-block lazyload" data-sizes="auto" style="
+                    background-image: url('./assets/screenshots/cr_background.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    " data-bg="./assets/screenshots/cr_background.png" data-srcset="./assets/screenshots/cr_background.png 300w,
+                    ./assets/screenshots/cr_background.png 600w,
+                    ./assets/screenshots/cr_background.png 900w">
+                    <div class="hero-gradient"></div>
+                    <div class="projects-header cr">
+                        <h2>CODING RELOADED</h2>
+                    </div>
+                    <div class="projects-link-container">
+                        <div class="scrollLink-container"><a class="cr-link middle"
+                                href="https://ecarlson1201.github.io/CodingReloaded/">VIEW SITE</a></div>
+                        <div class="scrollLink-container"><a class="cr-link middle"
+                                href="https://github.com/ecarlson1201/CodingReloaded">REPO</a></div>
+                    </div>
+                    <div class="projects-image-container" data-aos="fade-right" data-aos-duration="2000"
+                        data-aos-anchor-placement='center-bottom'>
+                        <img class="lazyload" data-sizes="auto" data-srcset="./assets/screenshots/cr_final-2.png 300w,
+                    ./assets/screenshots/cr_final-2.png 600w,
+                    ./assets/screenshots/cr_final-2.png 900w" alt="">
+                    </div>
+                    <div class="projects-info-container lazyload">
+                        <p class="projects-info-inner">
+                            I am a full stack developer with experience using React/Node/Express/Mongo as well as
+                            Shopify
+                            to build web apps, eager to quickly learn new technical skills and adapt to new work
+                            environments.
+                            I am an active, engaging team member and a driven, dedicated employee. I am searching
+                            for the
+                            right
+                            company where I can pursue my creative and artistic passions I developed in film school
+                            while
+                            also utilizing
+                            my leadership and problem-solving skills I developed as a server captain. Working with
+                            an
+                            engaged and driven
+                            team to create an intuitive, easily accessible user experience is extremely rewarding
+                            for me. I
+                            relish in the
+                            problem solving and optimization aspects of web development.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="skills-container lazyload" data-sizes="auto" style="
+            background-image: url('./assets/chalk-background-small.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            " data-bg="./assets/about-1.jpg" data-srcset="./assets/about-1.jpg 300w,
+            ./assets/about-1.jpg 600w,
+            ./assets/about-1.jpg 900w">
+        <a id='skills' class="anchor"></a>
+        <div class="skills-inner">
+            <div class="skills-column" data-aos="fade-right" data-aos-duration="1000"
+                data-aos-anchor-placement='center-bottom'>
+                <h2>Front End</h2>
+                <ul>
+                    <li class="logo">
+                        <div><img class="skills-logo" src="./assets/logos/html-logo.png" alt="html-logo"></div>
+                        <span>HTML5</span>
+                    </li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/css-logo.png" alt="css-logo"><br>
+                        CSS3</li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/javascript-logo.png"
+                            alt="js-logo"><br><span>JavaScript</span>
+                    </li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/react-logo.png"
+                            alt="react-logo"><br>React.js</li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/shopify-logo.png"
+                            alt="redux-logo"><br><span>Shopify</span>
+                    </li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/jquery-logo.png"
+                            alt="jquery-logo"><br><span>jQuery</span></li>
+                </ul>
+            </div>
+            <div class="skills-column" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-anchor-placement='center-bottom'>
+                <h2>Back End</h2>
+                <ul>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/node-logo.png"
+                            alt="node-logo"><br><span>Node.js</span>
+                    </li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/express-logo.png"
+                            alt="express-logo"><br><span>Express</span>
+                    </li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/mongo.png"
+                            alt="mongo-logo"><br><span>MongoDB</span>
+                    </li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/mongoose-logo.png"
+                            alt="mongoose-logo"><br><span>Mongoose</span>
+                    </li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/mocha-chai-logo.png"
+                            alt="mocha-chai-logo"><br><span>Chai/Mocha</span></li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/passport-logo.png"
+                            alt="passport-logo"><br><span>Passport</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills-column" data-aos="fade-left" data-aos-duration="1000"
+                data-aos-anchor-placement='center-bottom'>
+                <h2>Tools</h2>
+                <ul>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/git-logo.png"
+                            alt="git-logo"><br><span>Git</span></li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/github-logo.png"
+                            alt="github-logo"><br><span>GitHub</span></li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/mlab-logo.png"
+                            alt="mlab-logo"><br><span>mLab</span>
+                    </li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/heroku-logo.png"
+                            alt="heroku-logo"><br><span>Heroku</span></li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/dev-tools-logo.png"
+                            alt="dev-tools-logo"><br><span>Dev</span>
+                        Tools</li>
+                    <li class="logo"><img class="skills-logo" src="./assets/logos/travis-logo.png"
+                            alt="travis-ci-logo"><br><span>Travis CI</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="lazyload" data-sizes="auto" style="
+        background-image: url('./assets/chalk-background-small.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        " data-bg="./assets/chalk-background.jpg" data-srcset="./assets/chalk-background.jpg 300w,
+        ./assets/chalk-background.jpg 600w,
+        ./assets/chalk-background.jpg 900w">
+        <div class="footer-inner">
+            <div class="footer-links-container">
+                <div class="footer-link">
+                    <a href="https://www.linkedin.com/in/ecarlson1201/" target="_blank">
+                        <div><img src="./assets/icon-linkedin.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-link">
+                    <a href="mailto: eric.paul.carlson@gmail.com">
+                        <div><img src="./assets/icon-email.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <p>I'm currently available for freelance and full time opportunities.</p>
+            <p>I look forward to chatting about developing your next project!</p>
+            <div class="copyright">©2020 Eric Carlson Development</div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="lazysizes.min.js" async=""></script>
+    <script>AOS.init();</script>
+    <script>document.addEventListener('lazybeforeunveil', function (e) {
+            var bg = e.target.getAttribute('data-bg');
+            if (bg) {
+                e.target.style.backgroundImage = 'url(' + bg + ')';
+            }
+        });</script>
 </body>
 
 </html>

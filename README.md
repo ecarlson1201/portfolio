@@ -3,5 +3,3 @@
 [Live Link](https://ecarlson1201.github.io/portfolio/)
 
 This is my personal web development portfolio. Built in HTML5, CSS3, & jQuery.
-
-<img src='/assets/portfolio-screenshot.png' alt='screenshot'>
