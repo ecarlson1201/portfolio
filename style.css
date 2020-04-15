@@ -168,7 +168,7 @@ a.middle:hover:before {
     z-index: 2;
     line-height: 1.5;
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .top-left-inner{
@@ -240,7 +240,7 @@ a.middle:hover:before {
 .icon-container a span{
     color: white;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Montserrat', Helvetica, sans-serif;
     text-decoration: none;
     position: absolute;
@@ -265,7 +265,7 @@ a.middle:hover:before {
 }
 
 .top-right .icon-overlay span{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .skills-inner{
@@ -323,7 +323,7 @@ a.middle:hover:before {
 }
 
 .projects-info-container{
-    flex: 0 1 67%;
+    flex: 0 1 60%;
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
@@ -341,7 +341,7 @@ a.middle:hover:before {
     display: -ms-flexbox;
     justify-content: center;
     align-items: center;
-    flex: 0 1 33%;
+    flex: 0 1 40%;
 }
 
 .projects-info-inner{
@@ -496,4 +496,160 @@ footer{
 
 .footer-link{
     margin: 0 1rem;
+}
+
+@media only screen and (max-width: 1440px){
+    .bottom-right-inner, .top-left-inner {
+        font-size: 1.2rem;
+    }
+    .projects-info-inner {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .bottom-right-inner, .top-left-inner {
+        font-size: 1rem;
+    }
+    .projects-info-inner {
+        font-size: 1rem;
+    }
+    .about-inner .top-left {
+        height: 24.5rem;
+    }
+    .about-inner .top-right, .about-inner .bottom-left, .about-inner .bottom-right {
+        height: 24.5rem;
+    }
+    .about-inner .bottom-middle {
+        height: 24.5rem;
+    }
+    .icon-container img {
+        max-width: 80px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .bottom-right-inner, .top-left-inner {
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+    .projects-info-inner {
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+    .about-inner .top-left {
+        height: 20rem;
+    }
+    .about-inner .top-right, .about-inner .bottom-left, .about-inner .bottom-right {
+        height: 20rem;
+    }
+    .about-inner .bottom-middle {
+        height: 20rem;
+    }
+    .icon-container img {
+        max-width: 80px;
+    }
+    .top-left-inner {
+        padding: 1.5rem 0 1.5rem 1.5rem;
+    }
+    .bottom-right-inner {
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+    .bottom-right-inner p {
+        padding-left: 1.5rem;
+    }
+    .scrollLink-container a {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    .hero-inner h1 {
+        font-size: 2.5rem;
+    }
+    .hero-inner h2 {
+        font-size: 1.3rem;
+    }
+    .bottom-right-inner, .top-left-inner {
+        line-height: 1;
+    }
+    .projects-info-inner {
+        flex: 0 1 100%;
+        line-height: 1;
+    }
+    .about-inner .top-left {
+        height: auto;
+        flex: 0 1 100%;
+    }
+    .about-inner .top-right, .about-inner .bottom-left, .about-inner .bottom-right {
+        height: 20rem;
+        flex: 0 1 100%;
+    }
+    .about-inner .bottom-middle {
+        height: 20rem;
+        flex: 0 1 100%;
+    }
+    .icon-container img {
+        max-width: 80px;
+    }
+    .top-left-inner {
+        padding: 1.5rem 0 1.5rem 1.5rem;
+    }
+    .bottom-right-inner {
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+    .bottom-right-inner p {
+        padding-left: 1.5rem;
+    }
+    .scrollLink-container a {
+        font-size: 1rem;
+    }
+    .projects-header h2 {
+        font-size: 1rem;
+    }
+    .projects-image-container {
+        flex: 0 1 100%;
+    }
+    .projects-info-container {
+        flex: 0 1 100%;
+    }
+    .skills-column {
+        flex: 0 1 100%;
+    }
+    .footer-inner p {
+        font-size: 1rem;
+    }
+    .hero-inner ul {
+        display: block;
+        justify-content: space-evenly;
+    }
+    .hero-inner ul li{
+        padding: 0.5rem;
+    }
+    .projects-info-inner {
+        padding: 1.5rem;
+    }
+    .about-inner .top-left{
+        order: 1;
+    } .about-inner .top-right{
+        order: 2;
+    } .about-inner .bottom-left{
+        order: 4;
+    } .about-inner .bottom-right{
+        order: 3;
+    } .about-inner .bottom-middle {
+        order: 5;
+    }
+    .projects-header{
+        order: 1;
+    }
+    .projects-link-container{
+        order: 2;
+    }
+    .projects-info-container{
+        order: 4;
+    }
+    .projects-image-container{
+        order: 3;
+    }
+    .projects-header h2 {
+        font-size: 1.5rem;
+    }
 }
