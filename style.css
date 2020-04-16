@@ -120,6 +120,7 @@ a.middle:hover:before {
     display: -webkit-flex;
     display: -ms-flexbox;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .about-inner .top-left{
